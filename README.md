@@ -11,5 +11,7 @@ Concepts practiced: HTTP requests
 - User Input Validation
 - Null Case Exception Handling
 - Descriptions for Drinks
+
+### Finished
 - Finish using Sprectral for all tables
    - Build the overload function for drink categories
