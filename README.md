@@ -5,3 +5,11 @@ Concepts practiced: HTTP requests
 · JSON deserialization 
 · Third-party API consumption 
 · Console UI with Spectre.Console
+
+
+### TODO:
+- User Input Validation
+- Null Case Exception Handling
+- Descriptions for Drinks
+- Finish using Sprectral for all tables
+   - Build the overload function for drink categories
