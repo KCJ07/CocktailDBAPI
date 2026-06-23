@@ -28,6 +28,7 @@ public class ConsoleVis {
 
     }
 
+    // shows table for individual drinks
     public static void ShowTableArray(DrinkWrap drinkResult)
     {
   
@@ -47,6 +48,32 @@ public class ConsoleVis {
         
         foreach (var drinks in drinkResult.Drinks) {
             table.AddRow("[green]" + drinks.strDrink + "[/]", "Not Implemented Yet");
+        }
+
+        // write table after calculations
+        AnsiConsole.Write(table);
+    }
+    
+    // shows table for drink categories
+    public static void ShowTableArray(MainObject drinkResult)
+    {
+  
+        // Status spinner for work
+        AnsiConsole.Status()
+          .Start("Processing...", ctx =>
+           {
+              Thread.Sleep(2500);
+           });
+  
+        AnsiConsole.MarkupLine("[green]Done![/]");    
+
+        // A simple table with the drink
+        var table = new Table()
+            .AddColumn("Drink Category")
+            .AddColumn("Description");
+        
+        foreach (var drinks in drinkResult.Drinks) {
+            table.AddRow("[green]" + drinks.StrCategory + "[/]", "Not Implemented Yet");
         }
 
         // write table after calculations
